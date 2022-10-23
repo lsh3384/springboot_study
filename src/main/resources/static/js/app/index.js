@@ -4,6 +4,9 @@ var main = {
         $('#btn-save').on('click', function () {
             _this.save();
         });
+        $('#btn-update').on('click', function () {
+            _this.update();
+        });
     },
     save : function () {
         var data = {
@@ -45,7 +48,8 @@ var main = {
         }).fail(function (error) {
             alert(JSON.stringify(error));
         })
-    }
+    },
+    delete
 }
 
 main.init();
